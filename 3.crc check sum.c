@@ -26,6 +26,7 @@ int main() {
     a = strlen(t);
     for (e = a; e < a + N - 1; e++)
         t[e] = '0';
+    t[e]='\0';
     printf("\n");
     printf("\nModified data is : %s", t);
     printf("\n");
@@ -33,6 +34,7 @@ int main() {
     printf("\nChecksum is : %s", cs);
     for (e = a; e < a + N - 1; e++)
         t[e] = cs[e - a];
+    t[e]='\0';
     printf("\n");
     printf("\nFinal codeword is : %s", t);
     printf("\n");
