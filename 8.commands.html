@@ -1,0 +1,115 @@
+Commands and explanations
+1. ping
+Command to execute:ping google.com
+- Checks whether another computer or website can be reached over a network.
+- Uses a computer name or IP address to send a request and receive a reply.
+- Helps identify basic network connection problems.
+
+2. ipconfig
+Command to execute:ipconfig
+- Displays the computer's basic TCP/IP configuration.
+- Shows details such as the IP address and subnet mask.
+- Helps check the computer's network settings.
+
+3. ipconfig /all
+Command to execute:ipconfig /all
+- Displays detailed TCP/IP configuration information.
+- Shows details about the gateway, DNS, DHCP and network adapter.
+- Helps diagnose network configuration problems.
+
+4. ipconfig /release
+Command to execute:ipconfig /release
+- Releases the IP address leased from the DHCP server.
+- Disconnects the current DHCP-assigned IPv4 configuration until renewed.
+- Useful when resetting network settings; the connection may temporarily stop working.
+
+5. ipconfig /renew
+Command to execute:ipconfig /renew
+- Requests a new or renewed IP address from the DHCP server.
+- Helps resolve some network connection problems.
+- Does not renew a manually configured static IP address.
+
+6. getmac /v
+Command to execute:getmac /v
+- Displays the MAC address of network adapters.
+- Shows details about physical and virtual network adapters.
+- Helps identify network adapters on the computer.
+
+7. nbtstat -a
+Command to execute:nbtstat -a computername
+- Helps solve NetBIOS name-resolution problems.
+- Displays NetBIOS information about a specified computer.
+- NBT stands for NetBIOS over TCP/IP.
+
+8. arp -a
+Command to execute:arp -a
+- Displays the ARP table stored on the computer.
+- Shows IP addresses and their corresponding MAC addresses.
+- Helps identify devices on the local network.
+
+9. hostname
+Command to execute:hostname
+- Displays the name of your computer.
+- Helps identify your system on a network.
+- It is one of the simplest networking commands.
+
+10. ipconfig /flushdns
+Command to execute:ipconfig /flushdns
+- Clears the DNS resolver cache stored on your computer.
+- Helps resolve certain DNS-related network problems.
+- Makes the computer look up DNS information again when required.
+
+11. netdiag
+Command to execute:netdiag
+- Performs network diagnostic tests.
+- Helps identify network configuration and connectivity problems.
+- This is a legacy Windows utility and may not be available on modern Windows versions.
+
+12. netstat
+Command to execute:netstat
+- Displays statistics about active TCP/IP connections.
+- Helps examine network connections used by applications.
+- Useful for diagnosing problems with applications that use network connections.
+
+13. nslookup
+Command to execute:nslookup google.com
+- Used to diagnose DNS-related problems.
+- Finds the IP address associated with a domain name.
+- Helps check whether DNS name resolution is working.
+
+14. pathping
+Command to execute:pathping google.com
+- Combines the functions of ping and tracert.
+- Traces the route taken by packets to the destination.
+- Collects statistics about packet loss along the route.
+
+15. route
+Command to execute:route print
+- Displays the computer's routing table.
+- Shows the routes used to send network packets.
+- Helps check whether routing entries are correct.
+
+16. tracert
+Command to execute:tracert google.com
+- Displays the routers through which packets travel to reach a destination.
+- Helps identify where delays or connectivity problems may occur along the route.
+- Shows the path from your computer to the destination computer.
+
+Quick revision for your practical exam
+Command	Main purpose
+ping	Checks connectivity
+ipconfig	Displays basic IP configuration
+ipconfig /all	Displays detailed IP configuration
+ipconfig /release	Releases the DHCP-assigned IP address
+ipconfig /renew	Renews the DHCP-assigned IP address
+getmac /v	Displays MAC addresses
+nbtstat -a computername	Checks NetBIOS information
+arp -a	Displays IP-to-MAC mappings
+hostname	Displays computer name
+ipconfig /flushdns	Clears DNS cache
+netdiag	Diagnoses network problems
+netstat	Displays network connections
+nslookup	Diagnoses DNS and looks up domain names
+pathping	Traces route and measures packet loss
+route print	Displays routing table
+tracert	Shows the route to a destination
